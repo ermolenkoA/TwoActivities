@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TwoActivities</string>
+    <string name="buttonMain">SEND</string>
+    <string name="editTextMain">Enter Your Message Here</string>
+    <string name="buttonSecond">Reply</string>
+    <string name="editTextSecond">Enter Your Reply Here</string>
+    <string name="textViewMessage">Message Received</string>
+    <string name="textViewReply">Reply Received</string>
 </resources>

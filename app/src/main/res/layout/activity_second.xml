@@ -4,51 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/titleTextView"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="@string/textViewReply"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/textViewMessage"
+        android:textAppearance= "@style/TextAppearance.AppCompat.Medium"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:visibility="invisible"
-        android:id="@+id/replyTextView"
+        android:id="@+id/messageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintStart_toStartOf="@+id/titleTextView"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"/>
 
     <EditText
-        android:id="@+id/mainEditText"
+        android:id="@+id/editText_second"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
-        android:hint="@string/editTextMain"
+        android:hint="@string/editTextSecond"
         android:inputType="textLongMessage"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/mainButton"
+        app:layout_constraintEnd_toStartOf="@+id/button_second"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/mainButton"
+        android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/buttonMain"
+        android:text="@string/buttonSecond"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
